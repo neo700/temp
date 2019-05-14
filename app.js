@@ -7,7 +7,7 @@ var auth = require('./routes/auth');
 var mongoose = require('mongoose');
 
 mongoose.Promise = require('bluebird');
-mongoose.connect('mongodb://localhost:27017/bookstore_db',{
+mongoose.connect('mongodb://ecko:euro4san@ds155076.mlab.com:55076/ecko',{
     useNewUrlParser: true,
     promiseLibrary : require('bluebird')})
     .then(()=> console.log('connection is successful'))
